@@ -25,7 +25,7 @@ include_once 'header.php';
                     <input class=" form-control" id="u-email" type="email" name="email" placeholder="Enter your email here">
                 </div>
                 <div class=" mb-3">
-                    <label for="u-pwd" class=" form-label">Password</label>
+                    <label for="u-pwd" class=" form-label">Passworda</label>
                     <input class=" form-control" id="u-pwd" type="password" name="pwd" placeholder="Enter your password here">
                 </div>
                 <div class=" mb-4">
