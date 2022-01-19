@@ -16,11 +16,11 @@ class LoginController extends Login
 
     public function loginUser(){
         if($this->invalidUser() === false){
-            header('location:../index.php?error=invalidUser');
+            header('location:../index.html?error=invalidUser');
             exit();
         }
 
-        header('location:../index.php?error=noerror');
+        header('location:../index.html?error=noerror');
     }
 
 

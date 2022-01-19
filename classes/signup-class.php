@@ -12,7 +12,7 @@ class Signup extends Database
 
         if (!$stmt->execute([$first_name, $last_name, $username, $email, $hashed_pwd, $date])) {
             $stmt = null;
-            header('location:../index.php?error=stmtfailed');
+            header('location:../index.html?error=stmtfailed');
             exit();
         }
 
@@ -24,7 +24,7 @@ class Signup extends Database
         $stmt = $this->connect()->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
 
         if (!$stmt->execute([$username, $email])) {
-            header('location:../index.php?error=' . $stmt->errno);
+            header('location:../index.html?error=' . $stmt->errno);
             $stmt = null;
             exit();
         }

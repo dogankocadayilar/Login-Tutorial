@@ -8,7 +8,7 @@ class Login extends Database
         $stmt = $this->connect()->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
 
         if (!$stmt->execute([$user, $user])) {
-            header('location:../index.php?error=' . $stmt->errno);
+            header('location:../index.html?error=' . $stmt->errno);
             $stmt = null;
             exit();
         }

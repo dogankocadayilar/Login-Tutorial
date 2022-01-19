@@ -23,25 +23,25 @@ class SignupController extends Signup
     public function createUser()
     {
         if (!$this->emptyFields()) {
-            header('location:../index.php?emptyFields');
+            header('location:../index.html?emptyFields');
             exit();
         }
         if (!$this->invalidEmail()) {
-            header('location:../index.php?invalidEmail');
+            header('location:../index.html?invalidEmail');
             exit();
         }
         if (!$this->nameCheck()) {
-            header('location:../index.php?invalidName');
+            header('location:../index.html?invalidName');
             exit();
         }
         if (!$this->pwdCheck()) {
-            header('location:../index.php?pwd');
+            header('location:../index.html?pwd');
             exit();
         }
 
         $this->setUser($this->first_name, $this->last_name, $this->username, $this->email ,$this->pwd);
 
-        header('location:../index.php?error=noerror');
+        header('location:../index.html?error=noerror');
     }
 
     private function emptyFields(): bool
