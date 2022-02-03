@@ -6,7 +6,7 @@ You can get on git: `git clone  https://github.com/dogankocadayilar/Login-Tutori
 ## How To Use?
 First, you need databe with table like this
 
-Name of te table must be **users**.
+Name of the table must be **users**.
 
 ![Image](https://github.com/dogankocadayilar/Login-Tutorial/blob/main/img/table.png)
 
